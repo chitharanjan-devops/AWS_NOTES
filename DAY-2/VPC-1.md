@@ -72,5 +72,6 @@ EC2 instances in the public subnet must have Elastic IP or Public IP.
 Place web servers in a public subnet.
 
 
+#Architecture
 
  ![Image Description](/Images/VPC-Intro.jpg)
