@@ -30,8 +30,8 @@ Example: EC2 instance assuming an S3 access role instead of storing access keys.
 ### 4. IAM Policies
 JSON-based documents that define permissions for users, groups, and roles.
  
- Types of Policies:
- 
+ #### Types of Policies:
+
   AWS Managed Policies – Predefined by AWS.
 
   Customer Managed Policies – Created and customized by users.
