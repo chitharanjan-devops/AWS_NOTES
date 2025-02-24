@@ -104,3 +104,7 @@ Hosting a website.
 Running a production service that requires a fixed IP.
 
 Configuring a NAT Gateway to allow private instances to access the internet.
+
+## Architecture & Rough Notes
+
+![My Image](Images/my-image.png)
