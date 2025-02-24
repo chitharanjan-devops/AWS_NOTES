@@ -1,6 +1,7 @@
 # Introduction to Virtual Private Cloud (VPC)
 
 ## What is VPC?
+
 A Virtual Private Cloud (VPC) is a logically isolated network in the cloud where you can launch and manage AWS resources.
 It allows you to define IP address ranges, subnets, route tables, and gateways to control traffic flow.
 Similar to a traditional data center but in the cloud.
@@ -22,7 +23,6 @@ A Route Table contains rules (routes) that determine how network traffic is dire
 Each subnet in a VPC must be associated with a route table.
 
 ### Types of Route Tables:
-
 Main Route Table – Default route table for all subnets unless explicitly changed.
 
 Custom Route Table – You can create additional route tables for specific subnets.
@@ -34,7 +34,6 @@ An Internet Gateway (IGW) is a component that allows resources in a public subne
 It provides NAT (Network Address Translation) for outgoing traffic and enables incoming traffic to reach resources with a public IP.
 
 ### How IGW Works?
-
 Attach IGW to VPC – It must be explicitly attached to a VPC.
 
 Route Table Configuration – The public subnet's route table should have a route like:
@@ -50,13 +49,11 @@ A Public Subnet is a subnet where resources can access and be accessed from the 
 It is connected to an Internet Gateway (IGW).
 
 ### EC2 instances in a public subnet must have:
-
 A public IP
 
 A route to the Internet Gateway (IGW)
 
-#### How to Make a Subnet Public?
-
+### How to Make a Subnet Public?
 Attach an IGW to the VPC.
 
 Modify the route table associated with the subnet:
@@ -78,7 +75,6 @@ The instance is stopped and started.
 The instance is terminated and relaunched.
 
 Use Case:
-
 When public access is required but permanent IP is not needed.
 
 Suitable for temporary or short-lived workloads.
@@ -97,12 +93,10 @@ The instance is stopped and started.
 The instance fails and needs to be restarted.
 
 ### Important Notes About Elastic IPs:
-
 AWS provides one Elastic IP for free, but only if it’s associated with a running instance., If not associated, AWS charges you for keeping it idle.
 You can only have a limited number of Elastic IPs per AWS account (default limit is 5 per region, but you can request an increase).
 
 Use Case:
-
 When a permanent public IP is needed, such as:
 
 Hosting a website.
