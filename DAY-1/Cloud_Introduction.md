@@ -26,6 +26,7 @@ Cost Efficiency – No need for upfront investment in hardware.
 Scalability – Easily scale resources up or down.
 
 Flexibility – Access resources from anywhere.
+
 Security & Reliability – Cloud providers offer advanced security features and backup options.
 
 Automatic Updates – Providers handle maintenance and software updates
@@ -51,7 +52,9 @@ AWS operates in different locations worldwide. Understanding the AWS infrastruct
 
 ### Key Components:
 Regions – A geographical area containing multiple AWS data centers.
+
 Availability Zones (AZs) – Data centers within a region that provide redundancy.
+
 Edge Locations – Used by AWS CloudFront for content delivery and caching.
 
 ## 3. AWS Core Services
