@@ -22,7 +22,85 @@ Cloud computing is the delivery of computing services—such as servers, storage
 
 ## Benefits of Cloud Computing
 Cost Efficiency – No need for upfront investment in hardware.
+
 Scalability – Easily scale resources up or down.
+
 Flexibility – Access resources from anywhere.
 Security & Reliability – Cloud providers offer advanced security features and backup options.
+
 Automatic Updates – Providers handle maintenance and software updates
+
+
+# Introduction to AWS
+## 1. What is AWS?
+Amazon Web Services (AWS) is a cloud computing platform provided by Amazon. It offers a wide range of services such as computing power, storage, databases, networking, and security. AWS enables businesses and developers to build, deploy, and manage applications efficiently without investing in physical infrastructure.
+
+## Key Features of AWS
+Scalability – Resources can be scaled up or down as per demand.
+Cost-Effective – Pay-as-you-go pricing model.
+Security – Built-in security features and compliance with global standards.
+Flexibility – Supports multiple programming languages and platforms.
+Global Reach – Available in multiple regions worldwide.
+
+## 2. AWS Global Infrastructure
+AWS operates in different locations worldwide. Understanding the AWS infrastructure is crucial for designing scalable and resilient applications.
+
+### Key Components:
+Regions – A geographical area containing multiple AWS data centers.
+Availability Zones (AZs) – Data centers within a region that provide redundancy.
+Edge Locations – Used by AWS CloudFront for content delivery and caching.
+📌 Example: A company hosting a website on AWS should choose a region closest to its users for better performance.
+
+## 3. AWS Core Services
+AWS provides a wide range of services categorized into different domains:
+
+## A. Compute Services
+Amazon EC2 (Elastic Compute Cloud) – Virtual servers in the cloud.
+AWS Lambda – Serverless compute service that runs code in response to events.
+Amazon ECS (Elastic Container Service) – Manages Docker containers.
+Amazon EKS (Elastic Kubernetes Service) – Manages Kubernetes clusters.
+
+
+## B. Storage Services
+Amazon S3 (Simple Storage Service) – Scalable object storage.
+Amazon EBS (Elastic Block Store) – Persistent storage for EC2.
+Amazon EFS (Elastic File System) – Scalable file storage.
+AWS Backup – Centralized backup service.
+
+
+## C. Database Services
+Amazon RDS (Relational Database Service) – Managed database service for MySQL, PostgreSQL, MariaDB, Oracle, and SQL Server.
+Amazon DynamoDB – Fully managed NoSQL database.
+Amazon Redshift – Data warehousing service.
+Amazon Aurora – High-performance relational database.
+
+
+## D. Networking & Content Delivery
+Amazon VPC (Virtual Private Cloud) – Isolated cloud environment.
+AWS Route 53 – Domain Name System (DNS) service.
+AWS CloudFront – Content delivery network (CDN).
+AWS Direct Connect – Dedicated network connection to AWS.
+
+
+## E. Security & Identity
+AWS IAM (Identity and Access Management) – Manages user permissions.
+AWS KMS (Key Management Service) – Encryption key management.
+AWS WAF (Web Application Firewall) – Protects applications from attacks.
+AWS Shield – DDoS protection service.
+
+
+## 4. AWS Billing & Pricing
+AWS follows a pay-as-you-go model, meaning you pay only for what you use.
+
+Pricing Models:
+On-Demand – Pay for what you use, no long-term commitment.
+Reserved Instances – Commit for 1-3 years for a discount.
+Spot Instances – Purchase unused capacity at lower prices.
+Savings Plans – Flexible pricing model based on usage commitment.
+
+
+## 5. AWS Management & Monitoring
+AWS CloudWatch – Monitoring service for logs and performance metrics.
+AWS CloudTrail – Logs all AWS API calls for auditing.
+AWS Config – Tracks changes in AWS resources.
+AWS Trusted Advisor – Provides recommendations for security and cost optimization.
