@@ -69,12 +69,12 @@ What is a Dynamic Public IP?
 A temporary public IP assigned to an instance at launch.
 Assigned automatically when an instance is created if enabled.
 
-Changes when:
+### Changes when:
 The instance is stopped and started.
 
 The instance is terminated and relaunched.
 
-Use Case:
+### Use Case:
 When public access is required but permanent IP is not needed.
 
 Suitable for temporary or short-lived workloads.
@@ -87,7 +87,7 @@ A static, fixed public IP that you can manually assign to an instance.
 Remains permanently associated with your AWS account until manually released.
 Can be reassigned to another instance if needed.
 
-Does NOT change when:
+### Does NOT change when:
 The instance is stopped and started.
 
 The instance fails and needs to be restarted.
@@ -96,7 +96,7 @@ The instance fails and needs to be restarted.
 AWS provides one Elastic IP for free, but only if it’s associated with a running instance., If not associated, AWS charges you for keeping it idle.
 You can only have a limited number of Elastic IPs per AWS account (default limit is 5 per region, but you can request an increase).
 
-Use Case:
+### Use Case:
 When a permanent public IP is needed, such as:
 
 Hosting a website.
@@ -107,4 +107,5 @@ Configuring a NAT Gateway to allow private instances to access the internet.
 
 ## Architecture & Rough Notes
 
-![My Image](Images/my-image.png)
+![My Image](Images/VPC-1-BOARD.png)
+![My Image](Images/VPC-1-ARCHITECTURE.png)
