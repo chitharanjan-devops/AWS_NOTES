@@ -107,5 +107,4 @@ Configuring a NAT Gateway to allow private instances to access the internet.
 
 ## Architecture & Rough Notes
 
-![My Image](Images/VPC-1-BOARD.png)
-![My Image](Images/VPC-1-ARCHITECTURE.png)
+![My Image](Images/VPC-DAY-1.png)
