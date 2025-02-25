@@ -40,6 +40,12 @@ Used for scientific calculations like weather prediction and space simulations.
 Example: Hpc6a
 Real-Life Example: A NASA supercomputer that calculates the path of planets.
 
+#### 6. Accelerated Computing (P, G, Inf Series) – Like a Graphics Workstation (GPU-Powered)
+
+These instances come with GPUs (Graphics Processing Units) for tasks that need parallel processing, like AI/ML training, and 3D rendering.
+
+Examples: P3, G5, Inf1
+Real-Life Example: A high-end graphics workstation that renders 3D animations, trains AI models, or processes high-resolution videos super fast.
 
 ###### How to Choose the Right Instance Type?
 If you need a normal, balanced server, go for General Purpose (T, M).
