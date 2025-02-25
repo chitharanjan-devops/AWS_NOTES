@@ -50,8 +50,6 @@ If you need a lot of memory, go for Memory Optimized (R, X).
 
 If you need fast storage, go for Storage Optimized (I, D).
 
-If you need graphics processing, go for GPU Instances (P, G).
-
 If you need supercomputing, go for HPC (Hpc).
 
 ## EC2 Key Pair
