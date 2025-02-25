@@ -9,32 +9,32 @@ Instances are billed on a pay-as-you-go model.
 
 ## EC2 Instance Types
 
-### 1️⃣ General Purpose (T, M Series) – Like a Normal Laptop 💻
+### 1️ General Purpose (T, M Series) – Like a Normal Laptop 💻
 
 Used for everyday tasks like hosting websites, small applications, and databases.
 Example: T3, M5
 Real-Life Example: A regular laptop used for watching YouTube, browsing, and working on MS Office.
 
-#### 2️⃣ Compute Optimized (C Series) – Like a Gaming PC 🎮
+#### 2️ Compute Optimized (C Series) – Like a Gaming PC 🎮
 
 Used for tasks that need high CPU power, like gaming servers and data processing.
 Example: C5, C6g
 Real-Life Example: A gaming PC that runs games smoothly because of its powerful processor.
 
-#### 3️⃣ Memory Optimized (R, X Series) – Like a Supercomputer 🧠
+#### 3️ Memory Optimized (R, X Series) – Like a Supercomputer 🧠
 
 Used for tasks that need a lot of RAM, like big databases and real-time analytics.
 Example: R5, X1e
 Real-Life Example: A supercomputer used for complex scientific research.
 
-#### 4️⃣ Storage Optimized (I, D Series) – Like a Hard Drive 🛢️
+#### 4️ Storage Optimized (I, D Series) – Like a Hard Drive 🛢️
 
 Used when you need very fast disk storage, like big data processing and log analysis.
 Example: I3, D2
 Real-Life Example: A high-speed SSD (Solid State Drive) that stores and retrieves data super fast.
 
 
-#### 6️⃣ High-Performance Computing (HPC) – Like a NASA Supercomputer 🚀
+#### 5 High-Performance Computing (HPC) – Like a NASA Supercomputer 🚀
 
 Used for scientific calculations like weather prediction and space simulations.
 Example: Hpc6a
