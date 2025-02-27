@@ -74,18 +74,18 @@ EC2 tenancy determines how an Amazon EC2 instance is hosted on physical servers.
 
 ## Types of EC2 Tenancy
 
-## Shared Tenancy (Default)
+### 1. Shared Tenancy (Default)
 Most cost-effective option.
 Instances run on shared physical servers with other AWS customers.
 Suitable for most workloads unless there are strict compliance or security requirements.
 
-## Dedicated Instance
+### 2. Dedicated Instance
 Runs on hardware dedicated to a single AWS account.
 May share hardware with other instances from the same account.
 Provides some isolation but not full control over the underlying host.
 More expensive than shared tenancy.
 
-## Dedicated Host
+### 3. Dedicated Host
 Provides an entire physical server dedicated to a single AWS account.
 Full control over instance placement on the host.
 Required for some licensing and compliance requirements (e.g., BYOL – Bring Your Own License).
