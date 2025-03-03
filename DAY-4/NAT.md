@@ -55,3 +55,7 @@ Configured with security groups to restrict access (e.g., only allow SSH from tr
 Prevents direct internet exposure of private instances.
 Improves security by limiting SSH access to a single, controlled instance.
 Easier management of private instances.
+
+## Architecture
+
+![My Image](/Images/NAT.jpg)
