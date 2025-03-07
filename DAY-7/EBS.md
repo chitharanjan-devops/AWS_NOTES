@@ -37,6 +37,6 @@ Choose the volume type, size, and availability zone (must match the EC2 instance
 
 Select the created volume, click Actions, and select Attach Volume.
 Select the instance to attach it to and assign a device name (e.g., /dev/sdf).
-Mount the Volume (after attachment):
+Mount the Volume (after attachment)
 
 ### Log into the EC2 instance and mount the volume on the operating system
