@@ -41,11 +41,11 @@ Mount the Volume (after attachment)
 
 ### Log into the EC2 instance and mount the volume on the operating system
 
-#### 1. Create a Mount Point
+### Create a Mount Point
    
      mkdir <mount_point-name>
 
-#### 2. TEMPORARY MOUNT
+### 1. TEMPORARY MOUNT
 
 ###### Check is there any data in the Volume
 
@@ -63,5 +63,42 @@ This step is necessary if ```file -s <dev_name>``` shows data as the output.
 
         mount <dev_name> <mount_point_name>
 
-Architecture
+### 2. PERM MOUNT
+
+To mount the secondary EBS volume permanently, so it remains mounted even after an EC2 restart, you need to add an entry in the /etc/fstab file.
+
+#### Create a Backup of /etc/fstab
+It’s always good practice to make a backup of important configuration files before making changes to them. This allows you to restore the original file if something goes wrong.
+
+     cp /etc/fstab /etc/fstab.back
+
+#### Add entry infstab
+
+    <dev_name> <file-system> <mounting_point> defaults,nofail   0  0
+
+Here’s what each part means:
+/dev/nvme1n1: The device name for the EBS volume.
+
+/mnt/my-ebs: The mount point where the volume will be mounted.
+
+ext4: The file system type (this could be xfs or another file system depending on what you formatted the EBS volume with).
+
+defaults: The default mount options.
+
+nofail: This ensures that the system will not fail to boot if the volume is not available (e.g., if the volume is not attached).
+0 0: These values are used by dump and fsck utilities for backup and file system checks, respectively. Most of the time, you'll use 0 0 for non-root file systems.
+
+   - Before mounting make sure to convert it to linux file system only if volume is empty
+
+##### Refresh
+
+After adding the entry to /etc/fstab, you can use the mount -a command to apply the changes and mount all file systems listed in the /etc/fstab file
+
+   mount -a
+
+### Unmount
+for unmounting ypu can use
+   umount <dev_name>
+
+# Architecture
 ![My Image](/Images/EBS.jpg)
