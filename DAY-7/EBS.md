@@ -43,9 +43,9 @@ Mount the Volume (after attachment)
 
 #### 1. TEMPORARY MOUNT
 
-    Check is there any data in the Volume
+Check is there any data in the Volume
 
-`file -s <dev_name>`
+   ```file -s <dev_name>```
 
 if the output is ```Data``` means Volume is empty, Then you need to formet and convert it to ext4/xfs file system
 
