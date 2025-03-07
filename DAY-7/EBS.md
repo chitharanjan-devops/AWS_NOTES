@@ -45,16 +45,20 @@ Mount the Volume (after attachment)
    
      mkdir <mount_point-name>
 
-#### 1. TEMPORARY MOUNT
+#### 2. TEMPORARY MOUNT
 
-Check is there any data in the Volume
+###### Check is there any data in the Volume
 
         file -s <dev_name>
 
-if the output is ```Data``` means Volume is empty, Then you need to formet and convert it to ext4/xfs file system using below command
-
+ - If the output is data, it means the volume does not have a file system (or it's empty).
+ - If it shows something like ext4 or xfs, then it means the volume already has a file system.
+       
+##### If the volume is empty or unformatted, you'll need to format it with a file system. 
+##### This step is necessary if file -s <dev_name> shows data as the output.
+       
         mkfs -t ext4 <dev_name>
 
-Mount the volume 
+##### Mount the volume 
 
         mount <dev_name> <mount_point_name>
