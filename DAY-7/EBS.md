@@ -55,7 +55,7 @@ Mount the Volume (after attachment)
  - If it shows something like ext4 or xfs, then it means the volume already has a file system.
        
 If the volume is empty or unformatted, you'll need to format it with a file system. 
-This step is necessary if file -s <dev_name> shows data as the output.
+This step is necessary if ```file -s <dev_name>``` shows data as the output.
        
         mkfs -t ext4 <dev_name>
 
