@@ -41,11 +41,20 @@ Mount the Volume (after attachment)
 
 ### Log into the EC2 instance and mount the volume on the operating system
 
+#### 1. Create a Mount Point
+   
+     mkdir <mount_point-name>
+
 #### 1. TEMPORARY MOUNT
 
 Check is there any data in the Volume
 
         file -s <dev_name>
 
-if the output is ```Data``` means Volume is empty, Then you need to formet and convert it to ext4/xfs file system
+if the output is ```Data``` means Volume is empty, Then you need to formet and convert it to ext4/xfs file system using below command
 
+        mkfs -t ext4 <dev_name>
+
+Mount the volume 
+
+        mount <dev_name> <mount_point_name>
