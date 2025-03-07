@@ -40,3 +40,12 @@ Select the instance to attach it to and assign a device name (e.g., /dev/sdf).
 Mount the Volume (after attachment)
 
 ### Log into the EC2 instance and mount the volume on the operating system
+
+#### 1. TEMPORARY MOUNT
+
+    Check is there any data in the Volume
+
+`file -s <dev_name>`
+
+if the output is ```Data``` means Volume is empty, Then you need to formet and convert it to ext4/xfs file system
+
