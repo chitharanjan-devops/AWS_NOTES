@@ -62,3 +62,6 @@ This step is necessary if ```file -s <dev_name>``` shows data as the output.
 ##### Mount the volume 
 
         mount <dev_name> <mount_point_name>
+
+Architecture
+![My Image](/Images/EBS.jpg)
