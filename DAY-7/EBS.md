@@ -65,6 +65,8 @@ This step is necessary if ```file -s <dev_name>``` shows data as the output.
 
 ### 2. PERM MOUNT
 
+ - Before mounting make sure to convert it to linux file system only if volume is empty
+ 
 To mount the secondary EBS volume permanently, so it remains mounted even after an EC2 restart, you need to add an entry in the /etc/fstab file.
 
 #### Create a Backup of /etc/fstab
@@ -88,17 +90,17 @@ defaults: The default mount options.
 nofail: This ensures that the system will not fail to boot if the volume is not available (e.g., if the volume is not attached).
 0 0: These values are used by dump and fsck utilities for backup and file system checks, respectively. Most of the time, you'll use 0 0 for non-root file systems.
 
-   - Before mounting make sure to convert it to linux file system only if volume is empty
+
 
 ##### Refresh
 
 After adding the entry to /etc/fstab, you can use the mount -a command to apply the changes and mount all file systems listed in the /etc/fstab file
 
-   mount -a
+        mount -a
 
 ### Unmount
 for unmounting ypu can use
-   umount <dev_name>
+         umount <dev_name>
 
 # Architecture
 ![My Image](/Images/EBS.jpg)
