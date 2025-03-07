@@ -44,4 +44,4 @@ AMIs are region-specific; copy them to another region if needed.
 
 Store AMIs in Amazon S3 (as part of snapshots).
 
-Delete old AMIs to reduce storage costs.
+Delete old AMIs to reduce storage costs..

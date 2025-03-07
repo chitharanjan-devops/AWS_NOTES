@@ -30,4 +30,4 @@ Cost Optimization – Identify underutilized resources to reduce cost.
 Performance – Improve performance by optimizing resources.
 Security – Detect security gaps (e.g., public S3 buckets, IAM policies).
 Fault Tolerance – Ensure high availability and resilience.
-Service Limits – Monitor usage of AWS service limits.
+Service Limits – Monitor usage of AWS service limits..
