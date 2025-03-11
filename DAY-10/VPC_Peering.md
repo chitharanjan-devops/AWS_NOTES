@@ -10,7 +10,7 @@ No Transitive Peering: If VPC A is peered with VPC B, and VPC B is peered with V
 Same or Different AWS Accounts: Peering can be done within the same AWS account or across different accounts.
 
 ### Steps to Set Up VPC Peering
-Create a Peering Connection
+#### Create a Peering Connection
 Go to the AWS VPC Console → Peering Connections → Create Peering Connection.
 
 Choose the VPCs to peer (either within the same account or different accounts).
@@ -21,14 +21,18 @@ Accept the Peering Request
 
 If peering with a different account, the owner of the other VPC must accept the request.
 
-Update Route Tables
+#### Update Route Tables
 In both VPCs, update route tables to allow traffic to pass between them.
+
 Example: If VPC A has CIDR 10.0.0.0/16 and VPC B has 192.168.0.0/16, add the following:
+
 In VPC A’s route table → Destination 192.168.0.0/16, Target: Peering connection.
+
 In VPC B’s route table → Destination 10.0.0.0/16, Target: Peering connection.
 
-Security Groups & NACLs
+#### Security Groups & NACLs
 Ensure security groups and network ACLs allow traffic between the two VPCs.
+
 
 
 ## 2. IAM Role with SSM Full Access for Private EC2
