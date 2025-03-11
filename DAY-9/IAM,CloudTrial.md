@@ -1,5 +1,4 @@
 # AWS IAM (Identity and Access Management)
-1. What is IAM?
 IAM is a web service that helps you securely control access to AWS resources.
 It enables users, groups, roles, and policies to define who can access what in AWS.
 IAM is global and does not require a specific region.
