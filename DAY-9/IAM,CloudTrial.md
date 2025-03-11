@@ -16,6 +16,7 @@ Instead of assigning policies to individual users, attach policies to groups.
 
 #### Example:
 Developers Group → Full access to EC2
+
 Support Group → Read-only access to S3
 
 
