@@ -71,3 +71,6 @@ If not installed, run:
 ## 4. Connect to Private EC2 Using Session Manager
 Go to EC2 Console → Select the EC2 instance.
 Click Connect → Choose Session Manager → Click Start Session.
+
+# EXAMPLE ARCHITECTURE
+![My Image](/Images/VPC_PEERING.jpg)
