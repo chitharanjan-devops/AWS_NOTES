@@ -19,8 +19,7 @@ Public Subnets: Host internet-facing services like Load Balancers.
 Private Subnets: Host backend services (e.g., Home, Catalog, Payment microservices).
 
 # How Traffic Flows from Browser to Server
-When a user types www.example.com in their browser, here’s how traffic flows step by step:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+When a user types www.example.com in their browser, here’s how traffic flows step by step:                                                                                            
 ## Step 1: User Enters Domain in Browser
 The browser sends a DNS query to resolve www.example.com to an IP address.
 
@@ -28,7 +27,7 @@ The browser sends a DNS query to resolve www.example.com to an IP address.
 GoDaddy (where you registered the domain) has Name Server (NS) records pointing to Route 53.
 Route 53 receives the request and checks its DNS records to find where to send the traffic.
 
-##Step 3: Route 53 Resolves to Load Balancer
+## Step 3: Route 53 Resolves to Load Balancer
 Route 53 checks its A record (Alias Record) or CNAME Record and returns the Load Balancer’s DNS name (e.g., example-alb-1234.amazonaws.com).
 The browser now knows where to send the request.
 
@@ -51,15 +50,23 @@ The EC2 instance returns data to the Load Balancer.
 ALB forwards the response back to the browser.
 The user sees the webpage loaded successfully.
 
-3. Detailed Traffic Flow with Diagram Reference
+# Detailed Traffic Flow with Diagram Reference
 🛠 From Browser to Server
+
 User enters www.example.com → Browser asks DNS for the IP
+
 GoDaddy’s Name Servers forward the request to Route 53
+
 Route 53 checks DNS records and returns Load Balancer’s DNS
+
 Browser sends request to ALB (Public Subnet)
+
 ALB routes request to the correct Target Group
+
 Target Group forwards request to Private Subnet EC2 instances
+
 EC2 instance processes request & sends response
+
 Response flows back through ALB to User’s Browser
 
 # Architecture
