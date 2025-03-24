@@ -15,4 +15,4 @@
 ---
 
 ### Architecture
- ![My Image](/Images/s3endpoint.jpg) 
+ ![My Image](/Images/s3-endpoint.jpg) 
