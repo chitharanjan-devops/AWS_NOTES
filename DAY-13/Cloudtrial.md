@@ -14,6 +14,7 @@ Trails for Deeper Logging: Can be configured to send logs to S3 & CloudWatch Log
 
 Multi-Region & Multi-Account Tracking: Can enable logging across all AWS regions.
 
+---
 
 ## 3. Types of Events Logged by CloudTrail
 
@@ -62,12 +63,12 @@ Detects anomalies in API usage.
 Example: Unusual number of failed login attempts.
 
 ## 5. CloudTrail vs CloudWatch
-Feature	  |            CloudTrail	                           |                          CloudWatch
+| Feature |            CloudTrail	                           |                          CloudWatch                          |   
+|---------|----------------------------------------------------|--------------------------------------------------------------|
+| Purpose |  Tracks API calls (who did what, where, when)	   |  Monitors metrics, logs, and events for performance & health |
 
-Purpose	  |  Tracks API calls (who did what, where, when)	   |  Monitors metrics, logs, and events for performance & health
+|Data Type|     API activity logs	                           |  Performance logs, custom metrics, and alarms                |
 
-Data Type |     API activity logs	                           |  Performance logs, custom metrics, and alarms
+|Retention| 90 days (Event History), unlimited if stored in S3 |  Varies based on log group retention settings                |
 
-Retention | 90 days (Event History), unlimited if stored in S3 |  Varies based on log group retention settings
-
-Use Case  |    Security auditing & compliance	               |  Real-time monitoring, alerting, troubleshooting
+|Use Case |    Security auditing & compliance	               |  Real-time monitoring, alerting, troubleshooting             |
