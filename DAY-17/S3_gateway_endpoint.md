@@ -11,3 +11,8 @@
   3. Choose the **VPC** and **Route Table** to associate it with.
   4. Select **Policy** (Full Access or Custom).
   5. Create the Endpoint and update Route Tables if needed.
+
+---
+
+### Architecture
+ ![My Image](/Images/s3endpoint.jpg) 
