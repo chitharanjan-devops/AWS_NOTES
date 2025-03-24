@@ -66,9 +66,6 @@ Example: Unusual number of failed login attempts.
 | Feature |            CloudTrail	                           |                          CloudWatch                          |   
 |---------|----------------------------------------------------|--------------------------------------------------------------|
 | Purpose |  Tracks API calls (who did what, where, when)	   |  Monitors metrics, logs, and events for performance & health |
-
 |Data Type|     API activity logs	                           |  Performance logs, custom metrics, and alarms                |
-
 |Retention| 90 days (Event History), unlimited if stored in S3 |  Varies based on log group retention settings                |
-
 |Use Case |    Security auditing & compliance	               |  Real-time monitoring, alerting, troubleshooting             |
