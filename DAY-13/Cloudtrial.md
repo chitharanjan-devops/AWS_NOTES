@@ -62,7 +62,7 @@ Detects anomalies in API usage.
 Example: Unusual number of failed login attempts.
 
 ## 5. CloudTrail vs CloudWatch
-Feature	              CloudTrail	                                                      CloudWatch
+Feature	  |            CloudTrail	                           |                          CloudWatch
 
 Purpose	  |  Tracks API calls (who did what, where, when)	   |  Monitors metrics, logs, and events for performance & health
 
