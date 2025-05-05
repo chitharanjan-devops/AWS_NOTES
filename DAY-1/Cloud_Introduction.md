@@ -1,12 +1,11 @@
 # Introduction to Cloud Computing
 
 ## What is Cloud Computing?
-Cloud computing is the delivery of computing services—such as servers, storage, databases, networking, software, and more—over the internet ("the cloud"). Instead of owning and maintaining physical infrastructure, users can access computing resources on-demand from cloud providers.
+Cloud computing is the on-demand delivery of IT resources over the Internet with pay-as-you-go pricing. Instead of buying, owning, and maintaining physical data centers and servers, you can access technology services, such as computing power, storage, and databases, on an as-needed basis from a cloud provider like Amazon Web Services (AWS).
 
 ## Key Characteristics of Cloud Computing
 1. On-Demand Self-Service – Users can provision resources as needed without human intervention.
 2. Broad Network Access – Cloud services are accessible over the internet from anywhere.
-3. Resource Pooling – Computing resources are shared among multiple users dynamically.
 4. Rapid Elasticity – Resources can scale up or down based on demand.
 5. Measured Service – Users pay only for the resources they use (pay-as-you-go model).
 
@@ -15,10 +14,6 @@ Cloud computing is the delivery of computing services—such as servers, storage
 2. Private Cloud – Dedicated infrastructure for a single organization, offering better control and security.
 3. Hybrid Cloud – A combination of public and private clouds, allowing data and applications to be shared between them.
 
-## Cloud Service Models
-1. Infrastructure as a Service (IaaS) – Provides virtualized computing resources like servers, storage, and networking (e.g., AWS EC2, Google Compute Engine).
-2. Platform as a Service (PaaS) – Offers a platform for developers to build and deploy applications (e.g., AWS Elastic Beanstalk, Google App Engine).
-3. Software as a Service (SaaS) – Delivers software applications over the internet (e.g., Gmail, Dropbox, Microsoft 365).
 
 ## Benefits of Cloud Computing
 Cost Efficiency – No need for upfront investment in hardware.
