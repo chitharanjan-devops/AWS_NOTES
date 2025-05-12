@@ -3,7 +3,7 @@ Vertical scaling (also known as scaling up/down) refers to increasing or decreas
 
 CPU (e.g., upgrading from 2 cores to 8 cores)
 RAM (e.g., increasing memory from 4GB to 32GB)
-Storage (e.g., upgrading disk space or switching from HDD to SSD)
+Storage (e.g., upgrading disk space)
 
 ### Advantages
 ✅ Simple and easy to implement
