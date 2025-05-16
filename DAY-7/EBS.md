@@ -76,7 +76,7 @@ It’s always good practice to make a backup of important configuration files be
 
 #### Add entry infstab
 
-    <dev_name> <file-system> <mounting_point> defaults,nofail   0  0
+    <dev_name> <mounting_point> <file-system>  defaults,nofail   0  0
 
 Here’s what each part means:
 /dev/nvme1n1: The device name for the EBS volume.
